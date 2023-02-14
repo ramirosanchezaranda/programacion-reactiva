@@ -1,0 +1,21 @@
+form {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+form button {
+    margin-bottom: 1rem;
+}
+
+form input{
+    padding: .6rem;
+    margin: 0;
+    border-radius: 1rem;
+}

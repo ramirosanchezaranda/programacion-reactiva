@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-3" *ngFor="let profesor of profesores">
+            <mat-card>
+                <mat-card-header>
+                    <mat-card-title>{{ profesor.nombre | uppercase }}</mat-card-title>
+                </mat-card-header>
+                <img class="card-imagen" mat-card-image src={{profesor.img}} alt="">
+                <mat-card-content>
+                    <p>Curso: {{profesor.cursoADictar}}</p>
+                    <p>Email : {{profesor.email}}</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>

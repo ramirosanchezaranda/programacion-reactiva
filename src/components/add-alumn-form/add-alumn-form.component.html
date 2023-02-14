@@ -1,0 +1,30 @@
+<form [formGroup]="formulario">
+    <div class="form-group">
+      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nombre" formControlName="nombre">
+    </div>
+    <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Apellido" formControlName="apellido" >
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Curso" formControlName="curso" >
+      </div>
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Profesor" formControlName="profesor" >
+      </div>
+      <div class="form-group">
+        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Fecha Inicio" formControlName="fechaInicio">
+      </div>
+      <div class="form-group">
+        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Fecha Fin" formControlName="fechaFin">
+      </div>
+      <div class="form-group">
+        <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nota Actual" formControlName="notaActual">
+      </div>
+      <div class="form-group">
+        <select name="" id="" placeholder="Aprobado" formControlName="aprobado">
+          <option value="true">True</option>
+          <option value="false">False</option>
+        </select>
+      </div>
+    <button type="submit" class="btn btn-primary" (click)="add()">Agregar Alumno</button>
+  </form>

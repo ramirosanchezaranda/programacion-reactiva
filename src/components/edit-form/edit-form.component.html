@@ -1,0 +1,34 @@
+<h1 mat-dialog-title>Editar curso</h1>
+<div mat-dialog-content>
+    <form [formGroup]="formulario">
+        <div class="row">
+            <input type="text" placeholder="Nombre" formControlName="nombre" >
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Apellido" formControlName="apellido" >
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Curso" formControlName="curso" >
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Profesor" formControlName="profesor">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Inicia" formControlName="fechaInicio">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Finaliza" formControlName="fechaFin">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Nota Actual" formControlName="notaActual">
+        </div>
+        <div class="row">
+            <input type="text" placeholder="Aprobado" formControlName="aprobado">
+        </div>
+
+    </form>
+</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="cerrarModal()">Cerrar</button>
+    <button mat-flat-button (click)="edit()">Editar</button>
+</div>
